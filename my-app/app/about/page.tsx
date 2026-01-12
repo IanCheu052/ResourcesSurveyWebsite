@@ -1,5 +1,5 @@
 <div>
-    Home Page
+    About Us
     <div>
         Resources Survey
     </div>
