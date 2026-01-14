@@ -3,6 +3,23 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+
+  --rs-yellow-1: #ffd21f;
+  --rs-yellow-2: #ffdd57;
+  --rs-yellow-3: #ffbb00;
+  --rs-grey-bg-1: #d9d9d9;
+  --rs-grey-bg-2: #e3e3e3;
+  --rs-black-1: #2c2c2c;
+  --rs-black-2: #1a1a1a;
+
+  --bg-underground: url("/images/DJI_0849.JPG");
+  --bg-water: url("/images/DJI_0163.JPG");
+  --bg-landscape: url("/images/DJI_0525.JPG");
+
+  --bg- .bg-hero {
+    background-image: url("/images/DJI_0778.JPG");
+  }
 }
 
 @theme inline {
