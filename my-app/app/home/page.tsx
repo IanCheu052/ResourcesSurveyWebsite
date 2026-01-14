@@ -130,6 +130,26 @@ export default function HomePage() {
 
                 </div>
             </div>
+            <div className="text-(--rs-black-1) text-4xl font-bold flex flex-col px-60 h-max-screen py-24 ">
+                <div className='flex align-left items-start text-5xl mb-12 font-bold'>
+                    WE'RE HIRING
+                </div>
+                <div className='flex flex-row item-center gap-8'>
+                    <div className='flex flex-col items-center '>
+                        <Image src='/icons/undraw_scrum-board.svg' alt="Aerial drone" width={600} height={400} />
+
+                    </div>
+                    <div className='flex flex-col font-light max-w-xl pt-12 pl-8 mt-10 items-center'>
+                        <div className='text-xl text-balanced'>
+                            We are expanding our team and are looking for dedicated professionals
+                            to support our surveying and data processing services.
+                        </div>
+                        <button className='bg-(--rs-yellow-1) text-2xl px-12 py-4 whitespace-nowrap mt-20 font-bold rounded-lg hover:bg-(--rs-black-1) hover:text-(--rs-yellow-1) transition duration-300'>
+                            Apply Now
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
