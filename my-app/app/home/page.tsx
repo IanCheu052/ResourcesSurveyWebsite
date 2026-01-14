@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Header from "@/components/Header";
 
 export default function HomePage() {
@@ -32,31 +33,41 @@ export default function HomePage() {
                     </button>
                 </div>
             </div>
-            <div className='flex flex-col pb-24 px-48 items-center bg-[var(--rs-grey-bg-2)]'>
-                <div className='text-[var(--rs-black-1)] text-4xl font-bold pt-12 pb-6'>
+            <div className='flex flex-col pb-24 px-60 items-center bg-[var(--rs-grey-bg-1)]'>
+                <div className='text-[var(--rs-black-1)] text-4xl font-bold pt-12'>
                     We Can Map Anything
                 </div>
-                <div className='text-[var(--rs-grey-bg-2)] max-w-3xl text-xl font-light py-6 px-6'>
+                <div className='text-[var(--rs-grey-1)] max-w-3xl text-xl font-light py-6 px-6'>
                     Just Ask Us, and We Will Plan, Provide, Produce a Survey Plot Just For You
                 </div>
-                <div className='flex flex-row text-[var(--rs-black-1)] text-2xl font-semibold gap-12 pt-12'>
-                    <div className='flex flex-column'>
-                        <div>
+                <div className='grid grid-cols-4 text-(--rs-black-1) bg-(--rs-white-1) text-2xl font-semibold gap-4 p-10 rounded-4xl'>
+                    <div className='flex flex-col items-center'>
+                        <div className='py-4 mb-4 bg-(--rs-black-1) text-(--rs-yellow-1) w-42 text-center rounded-2xl text-xl'>
                             Land
-                        </div>
-                        <div className="bg">
 
                         </div>
+                        <Image src="/images/DJI_0005.JPG" alt="Aerial drone" width={500} height={1400} className="bg-no-repeat w-full h-full object-none rounded-2xl" />
+                    </div>
 
+                    <div className='flex flex-col items-center'>
+                        <div className='py-4 mb-4 bg-(--rs-black-1) text-(--rs-yellow-1) w-42 text-center rounded-2xl text-xl'>
+                            Water
+                        </div>
+                        <Image src="/images/DJI_0399.JPG" alt="Aerial drone" width={500} height={1400} className="bg-no-repeat w-full h-full object-none rounded-2xl" />
                     </div>
-                    <div className='flex flex-column'>
-                        Water
+
+                    <div className='flex flex-col items-center'>
+                        <div className='py-4 mb-4 bg-(--rs-black-1) text-(--rs-yellow-1) w-42 text-center rounded-2xl text-xl'>
+                            Underground
+                        </div>
+                        <Image src="/images/DJI_0849.JPG" alt="Aerial drone" width={500} height={1400} className="bg-no-repeat w-full h-full object-none rounded-2xl" />
                     </div>
-                    <div className='flex flex-column'>
-                        Underground
-                    </div>
-                    <div className='flex flex-column'>
-                        Aerial
+
+                    <div className='flex flex-col items-center'>
+                        <div className='py-4 mb-4 bg-(--rs-black-1) text-(--rs-yellow-1) w-42 text-center rounded-2xl text-xl'>
+                            Aerial
+                        </div>
+                        <Image src="/images/AIR.jpeg" alt="Aerial drone" width={500} height={1400} className="bg-no-repeat w-full h-full object-none rounded-2xl" />
                     </div>
                 </div>
             </div>

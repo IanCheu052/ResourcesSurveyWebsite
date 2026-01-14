@@ -4,20 +4,33 @@
   --background: #ffffff;
   --foreground: #171717;
 
-
   --rs-yellow-1: #ffd21f;
   --rs-yellow-2: #ffdd57;
   --rs-yellow-3: #ffbb00;
   --rs-grey-bg-1: #d9d9d9;
   --rs-grey-bg-2: #e3e3e3;
+  --rs-grey-1: #6b6b6b;
+  --rs-white-1: #fefefe;
   --rs-black-1: #2c2c2c;
   --rs-black-2: #1a1a1a;
 
-  --bg-underground: url("/images/DJI_0849.JPG");
-  --bg-water: url("/images/DJI_0163.JPG");
-  --bg-landscape: url("/images/DJI_0525.JPG");
+  .bg-mining {
+    background-image: url("/images/DJI_0849.JPG");
+  }
 
-  --bg- .bg-hero {
+  .bg-landscape {
+    background-image: url("/images/DJI_0005.JPG");
+  }
+
+  .bg-airborne {
+    background-image: url("/images/AIR.jpeg");
+  }
+
+  .bg-underwater {
+    background-image: url("/images/DJI_0399.JPG");
+  }
+
+  .bg-hero {
     background-image: url("/images/DJI_0778.JPG");
   }
 }
