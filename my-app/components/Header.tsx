@@ -8,7 +8,7 @@ const Header = () => {
             <div className="flex flex-row items-center gap-4 scroll-px-4">
                 <Image src="/logos/COMPANY_LOGO_2026.png" alt="Aerial drone" width={50} height={50} className="bg-no-repeat" />
                 <div className="font-light">
-                    Resources Survey Services
+                    Resources Surveys Services
                 </div>
             </div>
             <div className="flex flex-row ml-auto font-bold items-center divide-x divide-gray-400">
