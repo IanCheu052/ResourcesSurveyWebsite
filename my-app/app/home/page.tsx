@@ -10,7 +10,7 @@ export default function HomePage() {
     return (
         <div className='bg-[#d9d9d9]'>
             <Header />
-            <div className="bg-hero h-screen bg-cover bg-center mb-4 pt-16">
+            <div className="bg-hero-home h-screen bg-cover bg-center mb-4 pt-16">
                 <div className='text-8xl font-bold leading-tight pl-20 pt-18 pb-12'>
                     <div className='text-(--rs-yellow-1)'>
                         Resources

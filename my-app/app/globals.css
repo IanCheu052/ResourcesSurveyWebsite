@@ -30,8 +30,12 @@
     background-image: url("/images/DJI_0399.JPG");
   }
 
-  .bg-hero {
+  .bg-hero-home {
     background-image: url("/images/DJI_0778.JPG");
+  }
+
+  .bg-hero-about {
+    background-image: url("/images/DJI_0741.JPG");
   }
 }
 
