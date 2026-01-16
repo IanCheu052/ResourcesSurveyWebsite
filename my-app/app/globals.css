@@ -15,27 +15,27 @@
   --rs-black-2: #1a1a1a;
 
   .bg-mining {
-    background-image: url("/images/DJI_0849.JPG");
+    background-image: url("/images/mining/DJI_0849.JPG");
   }
 
   .bg-landscape {
-    background-image: url("/images/DJI_0005.JPG");
+    background-image: url("/images/landscape/DJI_0005.JPG");
   }
 
   .bg-airborne {
-    background-image: url("/images/AIR.jpeg");
+    background-image: url("/images/landscape/AIR.jpeg");
   }
 
   .bg-underwater {
-    background-image: url("/images/DJI_0399.JPG");
+    background-image: url("/images/hydro/DJI_0399.JPG");
   }
 
   .bg-hero-home {
-    background-image: url("/images/DJI_0778.JPG");
+    background-image: url("/images/mining/DJI_0778.JPG");
   }
 
   .bg-hero-about {
-    background-image: url("/images/DJI_0741.JPG");
+    background-image: url("/images/mining/DJI_0741.JPG");
   }
 }
 
@@ -50,6 +50,27 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+  }
+}
+
+@layer utilities {
+  @keyframes carousel {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+
+  .animate-carousel {
+    animation: carousel 30s linear infinite;
+    will-change: transform;
+  }
+
+  
+  .animate-carousel:hover {
+    animation-play-state: paused;
   }
 }
 
