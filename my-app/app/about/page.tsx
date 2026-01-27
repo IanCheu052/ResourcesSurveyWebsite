@@ -2,6 +2,7 @@
 import React from "react";
 import Header from "@/components/Header";
 import dynamic from 'next/dynamic'
+import WhoWeAre from "@/components/WhoWeAre";
 
 
 export default function AboutPage() {
@@ -13,7 +14,7 @@ export default function AboutPage() {
         <div className='bg-[#d9d9d9]'>
             <Header />
             <div className="relative overflow-hidden">
-                <div className="absolute inset-0 bg-hero-about w-[120%] min-h-[120%] -translate-x-1/2 -translate-y-1/2
+                <div className="absolute inset-0 bg-hero-about w-[120%] min-h-[160%] -translate-x-1/2 -translate-y-1/2
                 left-1/2 top-1/2 rotate-90 bg-cover bg-center z-0"/>
                     <div className= "relative bg-() z-10 flex flex-col items-center min-h-screen mb-4 text-6xl font-bold leading-tight pl-20 pt-96 pb-12 text-(--rs-yellow-1)">
                         <div className="w-full min-h-[120%] pt-32">
@@ -37,33 +38,10 @@ export default function AboutPage() {
                                 <span>
                                     Our Organisation
                                 </span>
-                                
                             </div>
                         </div>
-                        <div className="pt-12 text-xl font-light text-(--rs-grey-bg-1) bg-(--rs-white-1)/30 p-8 rounded-4xl w-4/5">
-                            <div className="text-2xl text-bold">
-                                Who we are
-                            </div>
-                            <div className="max-w-3xl gap-4 pt-4 pb-8">
-                                Established in 1995, Resources Surveys Services is a leading land 
-                                surveying consultancy based in Malaysia. We are dedicated to providing 
-                                professional and reliable surveying services to support land 
-                                development and infrastructure projects across the region.
-                            </div>
-                            <div className="max-w-3xl gap-4 pt-4 pb-8">
-                                Resources Surveys Services is a leading land surveying 
-                                consultancy providing professional and reliable surveying 
-                                services. With over 30 years of experience, we specialize in 
-                                delivering precise land measurements, mapping, and spatial 
-                                data solutions to support land development and infrastructure 
-                                projects.
-                            </div>
-                            <div className="text-2xl font-bold pt-8">
-                                Our vision is to "MAP everything" and anything. This mission requires us to be a
-                                continuously learning and evolving mapping company. We will provide the most precise 
-                                mapping along with the greatest team to support your needs.
-                            </div>
-                            <LeafletMap />
+                        <div className="pt-12 text-xl font-light text-(--rs-grey-bg-1) bg-(--rs-white-1)/30 p-8 rounded-4xl w-4/5 shadow-lg">
+                            <WhoWeAre/>
                         </div>
                          
                     </div>

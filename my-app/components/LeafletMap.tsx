@@ -50,7 +50,7 @@ const LeafletMap = () => {
     <MapContainer
       center={center}
       zoom={18}
-      className="h-100 w-100"
+      className="h-100 w-100 rounded-4xl shadow-lg"
       
     >
       <TileLayer
