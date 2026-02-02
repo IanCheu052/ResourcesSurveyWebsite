@@ -18,7 +18,7 @@ const LeafletMap = () => {
   const pinIcon = L.divIcon({
     className: '',
     html: renderToStaticMarkup(
-      <div className='flex flex-col items-center group relative' onClick={() => setViewMap(true)}>
+      <div className='flex flex-col items-center' onClick={() => setViewMap(true)}>
           
           <MapPin 
           size={32} 

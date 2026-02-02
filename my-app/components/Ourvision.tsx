@@ -1,6 +1,6 @@
 
 
-const ourvision = () => {
+const OurVision = () => {
   return (
     <div className="text-2xl font-bold pt-8">
         Our vision is to "MAP everything" and anything. This mission requires us to be a
@@ -10,4 +10,4 @@ const ourvision = () => {
   );
 };
 
-export default ourvision;
+export default OurVision;
