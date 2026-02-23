@@ -8,7 +8,7 @@ const Header = () => {
             <div className="flex flex-row items-center gap-4  scroll-px-4 py-2 px-12">
                 <Image src="/logos/COMPANY_LOGO_2026.png" alt="Aerial drone" width={50} height={50} className="bg-no-repeat" />
                 <div className="font-light">
-                    Resources Surveys Services
+                    Resources Survey Services
                 </div>
             </div>
             <div className="flex flex-row ml-auto font-bold items-center divide-x divide-gray-400">
@@ -22,9 +22,9 @@ const Header = () => {
                     Services
                 </div>
                 <div className="py-2 px-12">
-                    <button className="bg-(--rs-black-1) text-(--rs-yellow-1) font-bold py-2 px-12 rounded-lg hover:bg-(--rs-black-2) hover:text-[var(--rs-yellow-3)] transition duration-300 ">
+                     <Link href="/contact" className="bg-(--rs-black-1) text-(--rs-yellow-1) font-bold py-2 px-12 rounded-lg hover:bg-(--rs-black-2) hover:text-[var(--rs-yellow-3)] transition duration-300 ">
                         Contact Us  
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div >
