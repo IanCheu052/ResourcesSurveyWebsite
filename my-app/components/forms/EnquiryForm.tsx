@@ -1,4 +1,10 @@
+import { useState } from "react";
+import { z } from "zod";
+
 export default function EnquiryForm() {
+
+    const checkContent = z.string().trim().max(500, "Content must be at most 500 characters long");
+    const checkEmail = z.email("Invalid email address");
     const handleSubmit = async () => {
         await fetch("/api/contact", {
         method: "POST",
@@ -11,39 +17,54 @@ export default function EnquiryForm() {
         });
     };
 
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [subject, setSubject] = useState("");
+    const [content, setContent] = useState("");
+
   return (
-        <form className="bg-(--rs-grey-bg-1) flex flex-col mt-10 gap-6 border-2 border-(--rs-black-2) rounded-2xl shadow-lg w-full p-10">
+        <form className="bg-(--rs-grey-bg-1) flex flex-col mt-10 gap-6 border-2 border-(--rs-black-2) rounded-2xl shadow-lg p-10">
                 <div>
-                    Your Name
+                    Name
                 </div>
                 <input 
                     type="text" 
                     placeholder="Your Name" 
                     className="border-(--rs-black-2) border-2 bg-(--rs-white-1) rounded-lg p-2"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                 />
                 <div>
-                    Your Email
+                    Email
                 </div>
                 <input
                     type="text"
                     placeholder="Your Email"
                     className="border-(--rs-black-2) border-2 bg-(--rs-white-1) rounded-lg p-2"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                 />
                 <div>
-                    Your Interest
+                    Subject
                 </div>
-                <select className="border-(--rs-black-2) border-2 bg-(--rs-white-1) rounded-lg p-2">
+                <select className="border-(--rs-black-2) border-2 bg-(--rs-white-1) rounded-lg p-2"
+                    value={subject}
+                    onChange={(e) => setSubject(e.target.value)}
+                >
                     <option value="general">General Inquiry</option>
                     <option value="support">Land Consultancy</option>
-                    <option value="business">Business</option>
+                    <option value="business">Service Inquiry</option>
                 </select>
                 <div>
                     Content
                 </div>
                 <textarea
                     placeholder="Your Message"
+                    maxLength={500}
                     rows={6}
                     className="border-(--rs-black-2) border-2 bg-(--rs-white-1) rounded-lg p-2"
+                    value={content}
+                    onChange={(e) => setContent(e.target.value)}
                 />  
                 <div className="items-center">
 
@@ -55,3 +76,5 @@ export default function EnquiryForm() {
         </form>
   );
 }
+
+
