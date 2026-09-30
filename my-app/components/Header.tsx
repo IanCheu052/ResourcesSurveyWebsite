@@ -4,8 +4,8 @@ import Image from "next/image";
 const Header = () => {
 
     return (
-        <div className="flex flex-row gap-4 p-4 border-2 border-gray-300 bg-[#d9d9d9] text-[#2c2c2c]">
-            <div className="flex flex-row items-center gap-4 scroll-px-4">
+        <div className="flex flex-row gap-4 p-2 border-2 border-gray-300 bg-[#d9d9d9] text-[#2c2c2c]">
+            <div className="flex flex-row items-center gap-4  scroll-px-4 py-2 px-12">
                 <Image src="/logos/COMPANY_LOGO_2026.png" alt="Aerial drone" width={50} height={50} className="bg-no-repeat" />
                 <div className="font-light">
                     Resources Surveys Services

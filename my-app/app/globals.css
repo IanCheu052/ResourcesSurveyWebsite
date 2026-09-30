@@ -32,6 +32,9 @@
 
   .bg-hero-home {
     background-image: url("/images/mining/DJI_0778.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: panBackground 20s linear infinite alternate;
   }
 
   .bg-hero-about {
@@ -64,7 +67,9 @@
   }
 
   .animate-carousel {
+    width : max-content;
     animation: carousel 30s linear infinite;
+    overflow-x: auto;
     will-change: transform;
   }
 
@@ -72,7 +77,17 @@
   .animate-carousel:hover {
     animation-play-state: paused;
   }
-}
+
+  @keyframes panBackground {
+    0% {
+      background-position: left center;
+    }
+    100% {
+      background-position: right center;
+    }
+  }
+
+  }
 
 body {
   background: var(--background);
