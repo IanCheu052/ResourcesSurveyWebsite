@@ -1,9 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
-import Header from "@/components/Header";
-import WhoWeAre from "@/components/WhoWeAre";
+import Header from "@/app/components/Header";
+import WhoWeAre from "@/app/components/WhoWeAre";
 // import OurVision from "@/components/OurVision";
-import OurOrganisation from "@/components/Ourorganisation";
+import OurOrganisation from "@/app/components/Ourorganisation";
 import { AnimatePresence, motion } from "framer-motion";
 
 
