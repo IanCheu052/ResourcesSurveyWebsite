@@ -1,7 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "@/components/Header";
-import dynamic from 'next/dynamic'
 import WhoWeAre from "@/components/WhoWeAre";
 import OurVision from "@/components/OurVision";
 import OurOrganisation from "@/components/Ourorganisation";
@@ -12,6 +11,7 @@ export default function AboutPage() {
     const [scrolled, setScrolled] = useState(false)
     type Section = "Who We Are" | "Our Vision" | "Our Organisation"
     const [content, setContent] = useState<Section>("Who We Are")
+
 
     useEffect(() => {
         const onScroll = () => {

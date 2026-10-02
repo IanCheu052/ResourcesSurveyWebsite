@@ -1,3 +1,4 @@
+"use client";
 const OurOrganisation = () => {
   return (
     <div className="text-2xl font-bold pt-8">
