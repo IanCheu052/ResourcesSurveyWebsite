@@ -1,5 +1,3 @@
-"use client";
-
 const OurVision = () => {
   return (
     <div className="text-2xl font-bold pt-8">
