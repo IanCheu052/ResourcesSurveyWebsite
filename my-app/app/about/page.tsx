@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Header from "@/components/Header";
 import WhoWeAre from "@/components/WhoWeAre";
-import OurVision from "@/components/OurVision";
+// import OurVision from "@/components/OurVision";
 import OurOrganisation from "@/components/Ourorganisation";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -74,7 +74,12 @@ export default function AboutPage() {
                                             "
                                 >
                                 {content === "Who We Are" && <WhoWeAre/>}
-                                {content === "Our Vision" && <OurVision/>}
+                                {content === "Our Vision" &&     
+                                <div className="text-2xl font-bold pt-8">
+                                    Our vision is to "MAP everything" and anything. This mission requires us to be a
+                                    continuously learning and evolving mapping company. We will provide the most precise 
+                                    mapping along with the greatest team to support your needs.
+                                </div>}
                                 {content === "Our Organisation" && <OurOrganisation/>}
                             </motion.div>        
                         </AnimatePresence>                  
