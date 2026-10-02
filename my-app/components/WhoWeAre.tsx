@@ -1,9 +1,8 @@
 'use client';
 
-import LeafletMap from "./LeafletMap";
 import dynamic from "next/dynamic"
 
-const LeafletMapDynamic = dynamic(
+const LeafletMap = dynamic(
   () => import("./LeafletMap"),
   { ssr: false }
 )
@@ -30,6 +29,7 @@ const WhoWeAre = () => {
                 data solutions to support land development and infrastructure 
                 projects.
             </div>
+
         </div>
         <div className="flex justify-center">
           <LeafletMap/>

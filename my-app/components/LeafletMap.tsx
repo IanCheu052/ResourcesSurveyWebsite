@@ -1,5 +1,4 @@
-'use client'
-
+"use client";
 import { MapContainer, TileLayer, Marker } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
@@ -8,7 +7,7 @@ import { LatLngExpression } from 'leaflet'
 
 import { MapPin } from 'lucide-react'
 import { useState } from 'react'
-import { env } from 'process'
+
 
 const center: LatLngExpression = [1.553152, 110.370111]
 
