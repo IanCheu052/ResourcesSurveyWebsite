@@ -1,23 +1,24 @@
 
 export default function Section1({setCurrentSection}: {setCurrentSection: (section: number) => void}) {
     return (
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-2">
             <h2 className="text-2xl font-bold">Section 1: Personal Information</h2>
 
             <div className="mt-6">
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                    Title
-                </label>
-                <select>
-                    <option value="name1">Mr</option>
-                    <option value="name2">Mrs</option>
-                    <option value="name3">Dr</option>
-                </select>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mt-4">
-                    Name
-                </label>
-                <input type="text" id="name" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="Name"/>
-                
+                <div className="flex flex-col gap-6 sm:grid-cols-2">
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                        Title
+                    </label>
+                    <select>
+                        <option value="name1">Mr</option>
+                        <option value="name2">Mrs</option>
+                        <option value="name3">Dr</option>
+                    </select>
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mt-4">
+                        Name
+                    </label>
+                    <input type="text" id="name" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="Name"/>
+                </div>
                 <label htmlFor="dob" className="block text-sm font-medium text-gray-700 mt-4">
                     Date of Birth
                 </label>

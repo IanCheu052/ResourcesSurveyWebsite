@@ -9,8 +9,8 @@ export default function ContactPage() {
     return (
         <div className="bg-(--rs-grey-bg-1) fill-background min-h-screen max-w-screen">
             <Header/>
-            <div className="grid grid-cols-2 items-center min-h-screen max-w-screen gap-x-20">                 
-                <div className="flex flex-col items-start gap-10 p-30 ">
+            <div className="grid grid-cols-2 items-center min-h-screen max-w-screen gap-x-10">                 
+                <div className="flex flex-col items-start gap-10 p-20 ">
                     <div className="text-5xl text-start font-bold pl-10">
                         Contact Us
                     </div>
@@ -28,7 +28,7 @@ export default function ContactPage() {
                             For Hiring
                         </button>
                     </div>
-                    <div className="min-w-[85%]">
+                    <div className="min-w-[70%]">
                         {currentForm === "enquiry" ? <EnquiryForm /> : <HireForm />}
                     </div>
                 </div>

@@ -13,7 +13,7 @@ export default function HireForm() {
     ]
     
   return (
-    <div className=" min-h-screen mt-10 gap-6">
+    <div className="mt-10 gap-2">
         {sections[currentSection]}
     </div>
   );
