@@ -68,8 +68,8 @@ export default function HomePage() {
                     */
                 }
             </div>
-            <div className="bg-hero-home  h-screen w-full bg-cover bg-center pt-16 slide-right">
-                <div className='md:text-8xl text-6xl font-bold leading-tight pl-20 pt-18 pb-12'>
+            <div className="bg-hero-home min-h-screen w-full bg-cover bg-center md:p-16 p-2 slide-right">
+                <div className='md:text-8xl text-6xl font-bold leading-tight pl-20 pt-10 md:pt-18 pb-12'>
                     <div className='text-(--rs-yellow-1)'>
                         Resources
                     </div>
@@ -80,17 +80,21 @@ export default function HomePage() {
                         Services
                     </div>
                 </div>
-                <div className='flex flex-row text-4xl text-(--rs-grey-bg-1) font-semibold pl-20 pt-8'>
-                    We Can Map
-                    <div className='pl-2 text-(--rs-yellow-1)'>
+                <div className='flex flex-col md:flex-row text-4xl text-(--rs-grey-bg-1) font-semibold pl-20 pt-8 gap-2'>
+                    <div className=''>
+                        We Can Map
+                    </div>
+                    <div className='text-(--rs-yellow-1)'>
                         Everything
                     </div>
                 </div>
                 <div className='flex flex-row pl-20 pt-12'>
-                    <button className='bg-(--rs-yellow-3) text-(--rs-black-2) font-bold py-4 px-20 mr-6 rounded-lg'>
+                    <button className='bg-(--rs-yellow-3) text-(--rs-black-2) rounded-lg font-bold py-2 px-10 mr-3
+                    md:py-4 md:px-20 md:mr-6'>
                         Our Services
                     </button>
-                    <button className='bg-(--rs-black-1) text-(--rs-yellow-1) font-bold py-4 px-20 mr-6 rounded-lg hover:bg-(--rs-black-2) transition duration-300'>
+                    <button className='bg-(--rs-black-1) text-(--rs-yellow-1) rounded-lg font-bold py-4 px-20 mr-6  hover:bg-(--rs-black-2) transition duration-300
+                    md:py-4 md:px-20 md:mr-6'>
                         Contact Us
                     </button>
                 </div>
@@ -100,11 +104,11 @@ export default function HomePage() {
                  IMAGE VIEWING SECTION
                 */
             }
-            <div className='flex flex-col max-h-screen px-12 items-center bg-(--rs-grey-bg-1)'>
-                <div className='text-(--rs-black-1) text-4xl font-bold pt-12'>
+            <div className='flex flex-col min-h-screen px-12 items-center bg-(--rs-grey-bg-1)'>
+                <div className='text-(--rs-black-1) text-4xl font-bold pt-12 text-center lg:text-start'>
                     We Can Map Everything
                 </div>
-                <div className='text-(--rs-grey-1) text-xl font-light py-6 px-6'>
+                <div className='text-(--rs-grey-1) text-xl font-light py-6 px-6 text-center`'>
                     Just Ask Us, and We Will Plan, Provide, Produce a Survey Plot Just For You
                 </div>
                 <div className={selectedImage ? 'fixed inset-0 z-9999 flex mx-auto items-center justify-center bg-black/80 ' : 'hidden' } onClick={() => setSelectedImage(null)}>
@@ -113,37 +117,37 @@ export default function HomePage() {
                             
                         </div>                
                 </div> 
-                <div className='min-w-screen h-screen max-h-screen grid lg:grid-cols-4 grid-row-4 text-2xl font-semibold gap-12 px-24 py-10'>
+                <div className='min-w-screen h-screen min-h-screen grid lg:grid-cols-4 grid-cols-2 text-2xl mb:rounded-0 rounded-2xl font-semibold lg:gap-6 lg:px-8 lg:py-10 gap-2 px-4 py-1'>
                     
-                    <div className=' relative flex flex-col items-center justify-center text-center bg-cover bg-center bg-no-repeat bg-[url("/images/landscape/DJI_0005.JPG")] group group-hover:bg-black/50' onClick={() => setSelectedImage("/images/landscape/DJI_0005.JPG")} >
+                    <div className=' relative flex flex-col items-center justify-center text-center p-4 bg-cover bg-center bg-no-repeat bg-[url("/images/landscape/DJI_0005.JPG")] group group-hover:bg-black/50' onClick={() => setSelectedImage("/images/landscape/DJI_0005.JPG")} >
                         {/* <Image src="/images/landscape/DJI_0005.JPG" alt="Land"  width={1000} height={1000} className="bg-no-repeat w-full h-full object-none" />
                     */}
                                            
-                        <div className='text-center text-4xl font-bold text-yellow-400 
-                        lg:opacity-0 lg:transition-opacity lg:duration-300 lg:group-hover:opacity-100'>
+                        <div className='text-center text-2xl font-bold text-yellow-400 
+                        lg:text-3xl lg:opacity-0 lg:transition-opacity lg:duration-300 lg:group-hover:opacity-100'>
                             Land
                         </div>
                         
                     </div>
-                    <div className='relative flex flex-col items-center justify-center text-center bg-cover bg-center bg-no-repeat bg-[url("/images/hydro/DJI_0123.JPG")] group' onClick={() => setSelectedImage("/images/hydro/DJI_0123.JPG")} >
+                    <div className='relative flex flex-col items-center justify-center text-center p-4 bg-cover bg-center bg-no-repeat bg-[url("/images/hydro/DJI_0123.JPG")] group' onClick={() => setSelectedImage("/images/hydro/DJI_0123.JPG")} >
                         
-                        <div className='text-center text-4xl font-bold text-yellow-400 
-                        lg:opacity-0 lg:transition-opacity lg:duration-300 lg:group-hover:opacity-100'>
+                        <div className='text-center text-2xl font-bold text-yellow-400 
+                        lg:text-3xl lg:opacity-0 lg:transition-opacity lg:duration-300 lg:group-hover:opacity-100'>
                             Hydro
                         </div>
                     </div>
 
-                     <div className='relative flex flex-col items-center justify-center text-center bg-cover bg-center bg-no-repeat bg-[url("/images/mining/DJI_0849.JPG")] group' onClick={() => setSelectedImage("/images/mining/DJI_0849.JPG")} >
-                        <div className='text-center text-4xl font-bold text-yellow-400 
-                        lg:opacity-0 lg:transition-opacity lg:duration-300 lg:group-hover:opacity-100'>
+                     <div className='relative flex flex-col items-center justify-center text-center p-4 bg-cover bg-center bg-no-repeat bg-[url("/images/mining/DJI_0849.JPG")] group' onClick={() => setSelectedImage("/images/mining/DJI_0849.JPG")} >
+                        <div className='text-center text-2xl font-bold text-yellow-400 
+                        lg:text-3xl lg:opacity-0 lg:transition-opacity lg:duration-300 lg:group-hover:opacity-100'>
                             Mining
                         </div>
                     </div>
 
-                    <div className='relative flex flex-col items-center justify-center text-center  bg-cover bg-center bg-no-repeat bg-[url("/images/landscape-wps/AIR.jpeg")] group' onClick={() => setSelectedImage("/images/landscape-wps/AIR.jpeg")} >
+                    <div className='relative flex flex-col items-center justify-center text-center p-4 bg-cover bg-center bg-no-repeat bg-[url("/images/landscape-wps/AIR.jpeg")] group' onClick={() => setSelectedImage("/images/landscape-wps/AIR.jpeg")} >
                         {/* <Image src="/images/landscape-wps/AIR.jpeg" alt="Aerial drone" width={1000} height={1000} className="bg-no-repeat w-full h-full object-none" /> */}
-                        <div className='text-center text-4xl font-bold text-yellow-400 
-                        lg:opacity-0 lg:transition-opacity lg:duration-300 lg:group-hover:opacity-100'>
+                        <div className='text-center text-2xl font-bold text-yellow-400 
+                        lg:text-3xl lg:opacity-0 lg:transition-opacity lg:duration-300 lg:group-hover:opacity-100'>
                             Airborne
                         </div>
                     </div>
@@ -209,14 +213,14 @@ export default function HomePage() {
                 <div className="relative overflow-hidden w-full py-8">
                     <div className="flex w-full gap-8 animate-carousel">
                         {logos.map((logos, i) => (
-                        <div key={i} className="flex flex-col items-center justify-center group">
+                        <div key={i} className="grid grid-rows-2 items-center justify-center group">
                             
                                 <img
                                 src={logos}
                                 alt={`Affiliation Logo ${i + 1}`}
-                                className="md:w-60 md:h-60 w-55 h-55 md:object-contain object-fit gap-4 p-10 bg-white shadow-md transition-transform duration-300 hover:scale-110"
+                                className="md:w-60 md:h-60 sm:w-40 sm:h-40 h-30 w-30 object-contain object-fit md:gap-4 sm:gap-2 md:p-10 p-4 bg-white shadow-md transition-transform duration-300 hover:scale-110"
                                 />
-                                <div className="group-hover:opacity-100 opacity-0 transition-opacity duration-300 text-center text-lg font-semibold" id={logoNamesRepeated[i]}>
+                                <div className="group-hover:opacity-100 md:opacity-0 transition-opacity duration-300 text-center md:text-lg text-sm md:max-w-60 sm:max-w-40 max-w-30 font-semibold" id={logoNamesRepeated[i]}>
                                     {logoNamesRepeated[i]}
                                 </div>
                             
