@@ -68,8 +68,8 @@ export default function HomePage() {
                     */
                 }
             </div>
-            <div className="bg-hero-home min-h-screen w-full bg-cover bg-center md:p-16 p-2 slide-right">
-                <div className='md:text-8xl text-6xl font-bold leading-tight pl-20 pt-10 md:pt-18 pb-12'>
+            <div className="bg-hero-home w-full bg-cover bg-center md:p-16 p-2 slide-right">
+                <div className='md:text-8xl text-5xl font-bold leading-tight md:pl-20 pl-4 pt-10 md:pt-18 pb-12'>
                     <div className='text-(--rs-yellow-1)'>
                         Resources
                     </div>
@@ -80,7 +80,7 @@ export default function HomePage() {
                         Services
                     </div>
                 </div>
-                <div className='flex flex-col md:flex-row text-4xl text-(--rs-grey-bg-1) font-semibold pl-20 pt-8 gap-2'>
+                <div className='flex flex-row md:flex-row text-3xl text-(--rs-grey-bg-1) font-semibold md:pl-20 pl-4 pt-8 gap-2'>
                     <div className=''>
                         We Can Map
                     </div>
@@ -88,12 +88,12 @@ export default function HomePage() {
                         Everything
                     </div>
                 </div>
-                <div className='flex flex-row pl-20 pt-12'>
-                    <button className='bg-(--rs-yellow-3) text-(--rs-black-2) rounded-lg font-bold py-2 px-10 mr-3
+                <div className='flex flex-row md:pl-20 pl-4 py-12'>
+                    <button className='bg-(--rs-yellow-3) text-(--rs-black-2) rounded-lg font-bold py-4 px-10 mr-3
                     md:py-4 md:px-20 md:mr-6'>
                         Our Services
                     </button>
-                    <button className='bg-(--rs-black-1) text-(--rs-yellow-1) rounded-lg font-bold py-4 px-20 mr-6  hover:bg-(--rs-black-2) transition duration-300
+                    <button className='bg-(--rs-black-1) text-(--rs-yellow-1) rounded-lg font-bold py-4 px-10 mr-6  hover:bg-(--rs-black-2) transition duration-300
                     md:py-4 md:px-20 md:mr-6'>
                         Contact Us
                     </button>
@@ -104,7 +104,7 @@ export default function HomePage() {
                  IMAGE VIEWING SECTION
                 */
             }
-            <div className='flex flex-col min-h-screen px-12 items-center bg-(--rs-grey-bg-1)'>
+            <div className='flex flex-col min-h-lg px-12 items-center bg-(--rs-grey-bg-1)'>
                 <div className='text-(--rs-black-1) text-4xl font-bold pt-12 text-center lg:text-start'>
                     We Can Map Everything
                 </div>

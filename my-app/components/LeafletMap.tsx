@@ -27,7 +27,7 @@ const LeafletMap = () => {
 
           <div className="
           mt-1
-          px-2 py-0.5
+          py-0.5
           bg-white
           text-[10px] 
           font-medium

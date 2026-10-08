@@ -5,6 +5,7 @@ import WhoWeAre from "@/components/WhoWeAre";
 // import OurVision from "@/components/OurVision";
 import OurOrganisation from "@/components/Ourorganisation";
 import { AnimatePresence, motion } from "framer-motion";
+import OurVision from "@/components/OurVision";
 
 
 export default function AboutPage() {
@@ -28,16 +29,16 @@ export default function AboutPage() {
             <Header />
             <div className="relative overflow-hidden">
                 
-                    <div className= "relative bg-transparent bg-[url('/images/mining/DJI_0741.JPG')] bg-cover bg-center flex flex-col items-center min-h-screen mb-4 text-6xl font-bold leading-tight pl-20 pt-96 pb-12 text-(--rs-yellow-1)">
-                        <div className="w-full min-h-[120%] pt-32">
+                    <div className= "relative bg-transparent bg-[url('/images/mining/DJI_0741.JPG')] bg-cover bg-center flex flex-col items-center min-h-screen mb-4 md:text-6xl text-2xl font-bold leading-tight md:pl-20 pl-3 md:pt-96 pt-30 pb-12 text-(--rs-yellow-1)">
+                        <div className="w-full min-h-[120%] sm:pt-32 pt-10">
                             <div className="text-left w-full">
                                 About Us
                             </div>
                         
-                            <div className="text-left w-full text-3xl font-light pt-8 text-(--rs-grey-bg-1)">
+                            <div className="text-left w-full md:text-3xl text-xl font-light pt-8 text-(--rs-grey-bg-1)">
                                 Where it all started
                             </div>
-                            <div className="grid grid-cols-4 font-light max-w-6/7 text-(--rs-grey-bg-2) text-xl items-center text-center opacity-70 pt-24 px-20 gap-20 mb-20">
+                            <div className="grid grid-cols-4 font-light md:max-w-6/7 text-(--rs-grey-bg-2) md:text-xl text-sm items-center text-center opacity-70 md:pt-24 pt-2 md:px-20 px-2 md:gap-20 gap-2 my-20">
                                 <span className={content === "Who We Are" ? "underline underline-offset-8 decoration-4 decoration-(--rs-yellow-1) cursor-pointer" : "cursor-pointer"}
                                     onClick={() => setContent("Who We Are")}>
                                     Who We Are
@@ -63,23 +64,22 @@ export default function AboutPage() {
                                 animate={{ opacity: 1, y: 0 }}
                                 exit={{ opacity: 0, y: -20 }}
                                 transition={{ duration: 0.35, ease: "easeOut" }}
-                                    className="text-xl font-light
+                                    className="md:text-xl text-sm font-light
                                             text-(--rs-grey-bg-1)
                                             bg-(--rs-white-1)/30
-                                            p-8
+                                            md:p-8
+                                            py-2
+                                            px-1
                                             rounded-4xl
-                                            w-11/12
+                                            lg:w-11/12
+                                            w-fit
                                             shadow-lg
                                             overflow-hidden
                                             "
                                 >
                                 {content === "Who We Are" && <WhoWeAre/>}
                                 {content === "Our Vision" &&     
-                                <div className="text-2xl font-bold pt-8">
-                                    Our vision is to "MAP everything" and anything. This mission requires us to be a
-                                    continuously learning and evolving mapping company. We will provide the most precise 
-                                    mapping along with the greatest team to support your needs.
-                                </div>}
+                                <OurVision/>}
                                 {content === "Our Organisation" && <OurOrganisation/>}
                             </motion.div>        
                         </AnimatePresence>                  
