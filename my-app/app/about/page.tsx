@@ -38,7 +38,7 @@ export default function AboutPage() {
                             <div className="text-left w-full md:text-3xl text-xl font-light pt-8 text-(--rs-grey-bg-1)">
                                 Where it all started
                             </div>
-                            <div className="grid grid-cols-4 font-light md:max-w-6/7 text-(--rs-grey-bg-2) md:text-xl text-sm items-center text-center opacity-70 md:pt-24 pt-2 md:px-20 px-2 md:gap-20 gap-2 my-20">
+                            <div className="grid grid-cols-4 font-light md:max-w-6/7 text-(--rs-grey-bg-2) md:text-xl text-sm items-center text-center opacity-70 md:pt-12 pt-2 md:px-20 px-2 md:gap-20 gap-2 md:my-12 my-4">
                                 <span className={content === "Who We Are" ? "underline underline-offset-8 decoration-4 decoration-(--rs-yellow-1) cursor-pointer" : "cursor-pointer"}
                                     onClick={() => setContent("Who We Are")}>
                                     Who We Are

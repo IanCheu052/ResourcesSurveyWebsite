@@ -68,8 +68,8 @@ export default function HomePage() {
                     */
                 }
             </div>
-            <div className="bg-hero-home w-full bg-cover bg-center md:p-16 p-2 slide-right">
-                <div className='md:text-8xl text-5xl font-bold leading-tight md:pl-20 pl-4 pt-10 md:pt-18 pb-12'>
+            <div className="bg-hero-home w-full bg-cover bg-center md:p-12 p-2 slide-right">
+                <div className='md:text-8xl text-5xl font-bold leading-tight md:pl-20 pl-4 pt-10 md:pt-12 pb-12'>
                     <div className='text-(--rs-yellow-1)'>
                         Resources
                     </div>
@@ -80,7 +80,7 @@ export default function HomePage() {
                         Services
                     </div>
                 </div>
-                <div className='flex flex-row md:flex-row text-3xl text-(--rs-grey-bg-1) font-semibold md:pl-20 pl-4 pt-8 gap-2'>
+                <div className='flex flex-row text-xl sm:text-3xl text-(--rs-grey-bg-1) font-semibold md:pl-20 pl-4 pt-8 gap-2'>
                     <div className=''>
                         We Can Map
                     </div>
@@ -206,8 +206,8 @@ export default function HomePage() {
                     </div>
                 </div>
             </div>
-            <div className='min-h-screen text-(--rs-black-1) bg-(--rs-grey-bg-2) text-2xl flex flex-col items-center justify-center pb-4'>
-                <div className='font-bold p-8 mb-16 bg-(--rs-yellow-1) rounded-4xl'>
+            <div className='md:min-h-screen h-140 text-(--rs-black-1) bg-(--rs-grey-bg-2) text-2xl flex flex-col items-center justify-center pb-4'>
+                <div className='font-bold p-8 md:mb-16 mb-4 bg-(--rs-yellow-1) rounded-4xl'>
                     Our Affiliations
                 </div>
                 <div className="relative overflow-hidden w-full py-8">

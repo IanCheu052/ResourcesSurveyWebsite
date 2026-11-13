@@ -34,7 +34,7 @@
     background-image: url("/images/mining/DJI_0778.JPG");
     background-size: cover;
     background-repeat: no-repeat;
-    animation: panBackground 20s linear infinite alternate;
+    animation: panBackground 30s linear infinite alternate;
   }
 
   .bg-hero-about {

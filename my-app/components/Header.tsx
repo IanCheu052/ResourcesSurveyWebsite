@@ -18,9 +18,9 @@ const Header = () => {
                 <Link href="/about" className="py-2 md:px-12 px-3 ">
                     About Us
                 </Link>
-                <div className="py-2 md:px-12 px-3">
+                <Link href="/services" className="py-2 md:px-12 px-3">
                     Services
-                </div>
+                </Link>
                 <div className="py-2 md:px-12 px-3">
                     <button className="bg-(--rs-black-1) text-(--rs-yellow-1) font-bold py-2 md:px-12 px-3 text-sm rounded-lg hover:bg-(--rs-black-2) hover:text-[var(--rs-yellow-3)] transition duration-300 ">
                         Contact Us  
